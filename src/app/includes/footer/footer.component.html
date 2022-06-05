@@ -1,7 +1,67 @@
 <div class="disc-footer">
+  <!--Links-->
   <div class="disc-footer-links">
 
+    <div class="disc-footer-link-group">
+      <h5>About us</h5>
+      <span *ngFor="let link of aboutlinks" class="disc-footer-link">
+        {{link}}
+      </span>
+    </div>
+
+    <div class="disc-footer-link-group">
+      <h5>Contact us</h5>
+      <select class="disc-footer-select">
+        <option>Select company</option>
+      </select>
+      <span class="disc-footer-link">
+        Visit a Discovery Store
+      </span>
+    </div>
+
+    <div class="disc-footer-link-group">
+      <div class="disc-footer-link-group">
+        <h5>Join discovery</h5>
+        <span *ngFor="let link of joinLinks" class="disc-footer-link big-link">
+          {{link}}
+        </span>
+      </div>
+      <div class="disc-footer-connect">
+        <h5>Connect with us</h5>
+        <div class="disc-footer-horiz-link">
+          <span class="disc-footer-link horiz-link">
+            Download our app
+          </span>
+          <span class="disc-footer-link horiz-link">
+            Content Hub
+          </span>
+        </div>
+        <div class="disc-footer-social">
+          <button class="btn-round btn-facebook">
+            <img src="assets/icons/fb-simple.svg">
+          </button>
+          <button class="btn-round btn-linkedin">
+            <img src="assets/icons/linkedin-simple.svg">
+          </button>
+          <button class="btn-round btn-twitter">
+            <img src="assets/icons/twitter.svg">
+          </button>
+          <button class="btn-round btn-youtube">
+            <img src="assets/icons/youtube.svg">
+          </button>
+          <button class="btn-round btn-pintrest">
+            <img src="assets/icons/pintrest.svg">
+          </button>
+          <button class="btn-round btn-instagram">
+            <img src="assets/icons/instagram.svg">
+          </button>
+        </div>
+      </div>
+
+    </div>
   </div>
+
+  <!--Ribbon-->
   <div class="disc-footer-ribbon">
     <div class="disc-ribbon-links">
       Security & fraud | Terms & conditions | Site Map | Legal

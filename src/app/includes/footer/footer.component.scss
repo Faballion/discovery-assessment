@@ -1,15 +1,82 @@
 @import "/src/shared/variables.scss";
 
 .disc-footer {
+  .disc-footer-links {
+    padding: 25px 150px 50px 150px;
+    background-color: #EAECEF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-flow: row wrap;
 
-  .disc-footer-links {}
+    .disc-footer-link-group {
+      flex: 1 1 33%;
+      display: flex;
+      flex-flow: column;
+    }
+
+    .disc-footer-link {
+      font-size: 14px;
+      color: $disc-font-pimary-lighten;
+      margin-top: 15px;
+      &.big-link {
+        font-size: 16px;
+      }
+      &.horiz-link {
+        margin-right: 20px;
+      }
+    }
+
+    .disc-footer-select {
+      margin-top: 15px;
+      border-radius: 1px;
+      color: $disc-font-tertiary-darken2;
+      border: 2px solid $disc-line-border-grey;
+      height: 40px;
+      width: 75%;
+    }
+
+    .disc-footer-connect {
+      margin-top: 30px;
+    }
+
+    .disc-footer-social {
+      margin-top: 15px;
+    }
+
+    .btn-round {
+      border-radius: 50%;
+      padding: 9px 12px;
+      border: 0;
+      margin-right: 5px;
+
+      &.btn-facebook {
+        background-color: #1877f2;
+      }
+      &.btn-linkedin {
+        background-color: #007bb6;
+      }
+      &.btn-twitter {
+        background-color: #26c4f1;
+      }
+      &.btn-youtube {
+        background-color: #df1c31;
+      }
+      &.btn-pintrest {
+        background-color: #be091c;
+      }
+      &.btn-instagram {
+        background-color: #4090db;
+      }
+    }
+  }
 
   .disc-footer-ribbon {
     background-color: $disc-dark-blue;
     color: $disc-white;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 25px 150px;
 
     .disc-copyright {

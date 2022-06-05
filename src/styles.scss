@@ -34,6 +34,12 @@ body {
   font-family: "OpenSans" !important;
 }
 
+h5 {
+  font-size: 21px;
+  text-transform: uppercase;
+  color: $disc-font-accent6-darken2;
+}
+
 .disc-btn {
   background-color: $disc-dark-blue;
   border: 0;

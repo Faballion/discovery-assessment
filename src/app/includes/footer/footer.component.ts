@@ -7,6 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  aboutlinks = [
+    'Our business',
+    'Investor relations',
+    'Sustainability',
+    'Sponsorships',
+    'Life insurance',
+    'Newsroom',
+    'Careers at Discovery',
+  ];
+
+  joinLinks = [
+    'Individuals',
+    'Business',
+    'Financial advisors',
+    'Healthcare professionals',
+    'Suppliers',
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
