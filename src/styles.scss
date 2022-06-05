@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+$disc-dark-blue: #004B8D;
+$disc-white: #FFFFFF;
+
+.disc-btn {
+  background-color: $disc-dark-blue;
+  border: 0;
+  border-radius: 2px;
+  color: $disc-white;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0px 12px;
+  height: 30px;
+}

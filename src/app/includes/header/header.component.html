@@ -1,3 +1,30 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    Test
+<nav class="navbar disc-header">
+  <!--Main header-->
+  <div class="disc-main-header">
+    <img src="assets/icons/discovery-logo.svg">
+
+    <div class="disc-main-header-actions">
+      <button class="disc-btn long-btn">
+        Family
+        <img src="assets/icons/chevron-down.svg">
+      </button>
+
+      <span>Hi Daniel</span>
+
+      <button class="disc-btn">
+        Log out
+      </button>
+
+      <span class="disc-header-search">
+        <img src="assets/icons/search-icon.svg">
+      </span>
+    </div>
+  </div>
+
+  <!--Links-->
+  <div class="disc-secondary-header">
+    <span *ngFor="let link of links" class="disc-header-link">
+      {{link}}
+    </span>
+  </div>
 </nav>
