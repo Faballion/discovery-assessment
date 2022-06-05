@@ -1,0 +1,19 @@
+@import "/src/shared/variables.scss";
+
+.disc-footer {
+
+  .disc-footer-links {}
+
+  .disc-footer-ribbon {
+    background-color: $disc-dark-blue;
+    color: $disc-white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 150px;
+
+    .disc-copyright {
+      font-size: 13px;
+    }
+  }
+}

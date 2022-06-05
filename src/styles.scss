@@ -28,8 +28,7 @@
   src: local("OpenSans"), url(./assets/fonts/OpenSans-Bold.ttf) format("truetype");
 }
 
-$disc-dark-blue: #004B8D;
-$disc-white: #FFFFFF;
+@import "/src/shared/variables.scss";
 
 body {
   font-family: "OpenSans" !important;

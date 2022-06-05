@@ -1,12 +1,14 @@
+@import "/src/shared/variables.scss";
+
 .disc-header {
   padding: 24px 150px 0 150px;
-  border-bottom: 1px solid #F5F5F5;
+  border-bottom: 1px solid $disc-line-grey;
   margin-bottom: 60px;
-  color: #555555;
+  color: $disc-font-standard;
   font-weight: 600;
 
   .disc-main-header {
-    border-bottom: 1px solid #F5F5F5;
+    border-bottom: 1px solid $disc-line-grey;
     width: 100%;
     padding-bottom: 24px;
     display: flex;
