@@ -1,16 +1,18 @@
-# Editor configuration, see https://editorconfig.org
-root = true
-
 [*]
-charset = utf-8
-indent_style = space
-indent_size = 2
-insert_final_newline = true
-trim_trailing_whitespace = true
+charset=utf-8
+end_of_line=lf
+insert_final_newline=false
+indent_style=space
+indent_size=4
 
-[*.ts]
-quote_type = single
+[{.babelrc,.stylelintrc,.eslintrc,*.bowerrc,*.jsb3,*.jsb2,*.json}]
+indent_style=space
+indent_size=2
 
-[*.md]
-max_line_length = off
-trim_trailing_whitespace = false
+[*.scss]
+indent_style=space
+indent_size=2
+
+[{*.yml,*.yaml}]
+indent_style=space
+indent_size=2
