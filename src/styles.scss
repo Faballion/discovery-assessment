@@ -1,5 +1,39 @@
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 300;
+  src: local("OpenSans"), url(./assets/fonts/OpenSans-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 400;
+  src: local("OpenSans"), url(./assets/fonts/OpenSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 500;
+  src: local("OpenSans"), url(./assets/fonts/OpenSans-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 600;
+  src: local("OpenSans"), url(./assets/fonts/OpenSans-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 700;
+  src: local("OpenSans"), url(./assets/fonts/OpenSans-Bold.ttf) format("truetype");
+}
+
 $disc-dark-blue: #004B8D;
 $disc-white: #FFFFFF;
+
+body {
+  font-family: "OpenSans" !important;
+}
 
 .disc-btn {
   background-color: $disc-dark-blue;
@@ -10,4 +44,5 @@ $disc-white: #FFFFFF;
   font-size: 14px;
   padding: 0px 12px;
   height: 30px;
+  font-weight: 600;
 }
