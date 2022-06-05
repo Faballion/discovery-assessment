@@ -1,0 +1,162 @@
+@import "/src/shared/variables.scss";
+
+.disc-p1-grey-container {
+  background-color: $disc-line-grey;
+  padding: 60px 130px;
+
+  .disc-profile-grid {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 20px;
+  }
+}
+
+.profile-pic {
+  border-radius: 50%;
+  margin-right: 15px;
+  height: 70px;
+}
+
+.small-card-primary {
+  color: rgba(68, 68, 68, 0.87);
+}
+
+.small-card-secondary {
+  color: rgba(68, 68, 68, 0.54);
+}
+
+.thin-header {
+  font-weight: 300;
+  text-align: center;
+  line-height: 39px;
+  font-size: 29px;
+
+  .silver-indicator {
+    font-weight: 600;
+    color: $disc-silver;
+  }
+}
+
+.last-updated {
+  color: $disc-font-tertiary-lighten-1;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.points-tracker {
+  font-size: 18px;
+  color: $disc-font-accent6-darken2;
+}
+
+.left-side {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.right-side {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.grey-section {
+  background: rgba(0, 0, 0, 0.08);
+  flex: 1 1 auto;
+}
+
+.drive-status {
+  display: flex;
+  align-items: center;
+  margin: 45px 0 25px 0;
+
+  .drive-status-icon {
+    border-radius: 50%;
+    background: linear-gradient(90deg, #949494 0.86%, #C3C3C3 100%);
+    width: 45px;
+    height: 45px;
+    border: 2px solid $disc-white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 48%
+  }
+
+  .drive-status-section {
+    height: 15px;
+    width: 20%;
+    margin-left: 2px;
+
+    &.blue-gradient {
+      background: linear-gradient(90deg, #2D6DA4 0%, #88C3F4 100%);
+    }
+
+    &.bronze-gradient {
+      background: linear-gradient(90deg, #C16B45 0%, #EB874C 100%);
+    }
+
+    &.silver-gradient {
+      background: linear-gradient(90deg, #949494 0.86%, #C3C3C3 100%);
+    }
+
+    &.gold-gradient {
+      background: linear-gradient(270deg, #ECD05F 0%, #BB9142 106.65%);
+    }
+
+    &.diamond-gradient {
+      background: linear-gradient(90deg, #B2BDCF 0%, #C3AFC8 100%);
+    }
+  }
+}
+
+.cashback-text {
+  font-size: 18px;
+  color: $disc-font-accent6-darken2;
+  font-weight: 600;
+}
+
+.cashback-amount {
+  font-size: 28px;
+  color: $disc-font-pimary-lighten;
+  font-weight: 600;
+}
+
+.cashback-status {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 15px 0;
+
+  .cashback-status-section {
+    height: 15px;
+    &.blue-gradient {
+      background: linear-gradient(90deg, #116ECB 0%, #114B8A 100%);
+      width: 33%;
+    }
+  }
+}
+
+.card-link {
+  color: $disc-font-pimary-lighten;
+}
+
+.cashback-mini-card {
+  height: 125px;
+  background-color: $disc-line-grey;
+  width: 33%;
+  padding: 15px;
+  margin: 15px 0;
+  &.selected {
+    background-color: rgba(11, 91, 164, 0.2);
+  }
+  .header {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: $disc-font-tertiary-darken2;
+  }
+  .value {
+    color: $disc-dark-blue;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}

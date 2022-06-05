@@ -34,11 +34,38 @@ body {
   font-family: "OpenSans" !important;
 }
 
+h1 {
+  font-size: 32px;
+  line-height: 44px;
+  color: $disc-font-tertiary-darken2;
+  text-align: center;
+}
+
 h5 {
   font-size: 21px;
   text-transform: uppercase;
   color: $disc-font-accent6-darken2;
 }
+
+/* Util classes */
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* Component classes */
 
 .disc-btn {
   background-color: $disc-dark-blue;
@@ -50,4 +77,44 @@ h5 {
   padding: 0px 12px;
   height: 30px;
   font-weight: 600;
+}
+
+.disc-card {
+  border: 1px solid $disc-line-card-grey;
+  border-radius: 3px;
+  background-color: $disc-white;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.disc-card-border {
+
+}
+
+.disc-card-border-raised {
+  border: 1px solid $disc-line-card-grey;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  background-color: $disc-white;
+  border-left: 9px solid $disc-dark-blue;
+  padding: 15px 20px 30px 20px;
+  margin-bottom: 33px;
+  .header {
+    color: $disc-font-vitality-lighten-1;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .body {
+    color: $disc-font-tertiary-darken2;
+    font-size: 18px;
+  }
+  &.disc-vitality {
+    border-left: 9px solid $disc-font-vitality-lighten-1;
+    .header {
+      color: $disc-font-vitality-lighten-1;
+    }
+  }
 }
